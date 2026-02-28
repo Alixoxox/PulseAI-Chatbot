@@ -6,11 +6,10 @@ A LangChain-powered cryptocurrency assistant chatbot with FastAPI, Groq AI, Mong
 
 | Component | Technology |
 |-----------|-----------|
-| LLM | Groq (Llama 3.3 70B) via LangChain |
+| LLM | Groq (llama-4-scout-17b-16e-instruct) via LangChain |
 | Backend | FastAPI |
 | Database | MongoDB (Motor async driver) |
 | Cache | Upstash Redis (HTTP) |
-| Frontend | Vanilla HTML/CSS/JS |
 | Deployment | Render (Docker, free tier) |
 
 ## Features
@@ -41,7 +40,7 @@ Open `http://localhost:8000` in your browser.
 | Variable | Description |
 |----------|-------------|
 | `GROQ_API_KEY` | Groq API key |
-| `GROQ_MODEL` | Model name (default: `llama-3.3-70b-versatile`) |
+| `GROQ_MODEL` | Model name (default: `llama-4-scout-17b-16e-instruct`) |
 | `MONGODB_URI` | MongoDB connection string |
 | `MONGODB_DB` | Database name (default: `cryptodb`) |
 | `UPSTASH_REDIS_REST_URL` | Upstash Redis REST URL |
@@ -58,7 +57,6 @@ Open `http://localhost:8000` in your browser.
 
 | Method | Path | Description |
 |--------|------|-------------|
-| GET | `/` | Chat UI |
 | POST | `/api/chat` | Send message, get full response |
 | POST | `/api/chat/stream` | Send message, get SSE stream |
 | GET | `/health` | Health check |
