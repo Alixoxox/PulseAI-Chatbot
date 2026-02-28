@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+langchain
+langchain-groq
+langchain-core
+motor
+pymongo
+upstash-redis
+pydantic-settings
+python-dotenv
+sse-starlette
